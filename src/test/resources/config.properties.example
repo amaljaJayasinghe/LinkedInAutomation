@@ -1,0 +1,11 @@
+# Copy this file to "config.properties" (same folder) and fill in your own
+# LinkedIn credentials for local runs. DO NOT commit the real config.properties.
+# Environment variables of the same name always take priority over this file
+# (see utils.ConfigReader) - prefer env vars when possible.
+
+LINKEDIN_EMAIL=your-email@example.com
+LINKEDIN_PASSWORD=your-password
+
+# Optional: run Chrome headless (true/false). Defaults to false so you can
+# watch the run / record it for the deliverable.
+HEADLESS=false
