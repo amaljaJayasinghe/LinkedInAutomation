@@ -9,7 +9,6 @@ explicit waits. Built for an academic assignment on UI test automation.
 ```
 pom.xml
 mvnw.cmd                  # thin wrapper, runs the bundled Maven under .tools/ (no system install needed)
-.tools/                   # local Maven distribution (gitignored, downloaded once)
 src/test/java/
   base/BaseTest.java                   # starts/stops the browser per test; wires screenshot-on-failure
   base/ScreenshotOnFailureExtension.java
@@ -23,8 +22,6 @@ src/test/java/
   tests/SearchTest.java                # Task 3
   tests/SearchResultClickTest.java     # Task 4
 src/test/resources/config.properties.example
-screenshots/               # auto-captured failure screenshots land here
-report/                    # report source
 ```
 
 ## Prerequisites
@@ -124,8 +121,4 @@ If a login attempt is blocked by a CAPTCHA/security checkpoint, the positive
 login test will fail waiting for the feed page - this is expected and
 discussed in the report, not a bug in the test code.
 
-## Report
 
-`report/report.docx` - the Task 6 write-up (test case table, locator choices,
-problems run into, screenshots, reflection). `report/images/` holds the
-screenshots it embeds.
